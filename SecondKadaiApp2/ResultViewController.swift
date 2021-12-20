@@ -9,20 +9,22 @@ import UIKit
 
 class ResultViewController: UIViewController {
     //２画面目のLabelをStorybordでこのViewControllerにIBOutletとして接続しておく
-    @IBOutlet weak var label: UIlabel!
+    @IBOutlet weak var label: UILabel!
+  
     //受け取るためのプロパティ
     var x:String = "名前"
-    
+
     
     override func viewDidLoad() {
-        super.viewDidLoad()a
+        super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
-    let result = x
+        let result = x
         label.text = "こんにちは\(result)さん"
     
-
+    }
+  
+    
     /*
     // MARK: - Navigation
 
@@ -30,7 +32,8 @@ class ResultViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
+   
+     }
     */
 
 }
